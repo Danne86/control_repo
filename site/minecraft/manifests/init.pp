@@ -11,7 +11,7 @@ class minecraft {
   }
   file {'/opt/minecraft/eula.txt':
     ensure => file,
-    ensure => 'eula=TRUE',
+    source => 'eula=TRUE',
   }
   file {'/etc/systemd/system/minecraft.service':
     ensure => file,
